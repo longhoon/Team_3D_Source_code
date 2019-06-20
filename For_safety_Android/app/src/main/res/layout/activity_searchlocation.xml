@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="지역명, 주소, 건물명 등을 입력하세요"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/location_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/current_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¤내 위치"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/select_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지도에서 지정"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listview1"
+            android:textFilterEnabled="true">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

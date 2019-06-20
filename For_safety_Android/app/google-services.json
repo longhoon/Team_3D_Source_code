@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "587254728412",
+    "firebase_url": "https://hrjs-c58dc.firebaseio.com",
+    "project_id": "hrjs-c58dc",
+    "storage_bucket": "hrjs-c58dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587254728412:android:0d744950c9a077a8",
+        "android_client_info": {
+          "package_name": "test.com.hrjs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587254728412-4nho1fdut3eul55917r79ucco59fsui7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "test.com.hrjs",
+            "certificate_hash": "de449643e09aa58a51e9bd688f8f5dfb1f8470e1"
+          }
+        },
+        {
+          "client_id": "587254728412-0dd6c9js5pnv230t1u44b8j9traehdbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnDjEai4x121PKoqqDCPjxZ-6-jtn7anM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587254728412-0dd6c9js5pnv230t1u44b8j9traehdbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

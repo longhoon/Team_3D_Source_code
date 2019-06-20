@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="30dp"
+        android:id="@+id/left_light"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:id="@+id/naviinfo"
+        android:layout_weight="1.10"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/left_light">
+
+        <TextView
+            android:id="@+id/dest_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_centerHorizontal="true"
+            android:text="Destination Info"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totaltime"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text=" Left Time"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/lefttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/totaldistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:drawableStart="@drawable/leftdistance"
+            android:text=" Left Distance"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#ff0000"/>
+
+        <TextView
+            android:id="@+id/alarm"
+            android:enabled="false"
+            android:layout_below="@+id/direct_info"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/direct_info"
+            android:layout_below="@+id/arrow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/time"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="53dp"
+            android:src="@drawable/forward" />
+
+        <com.skt.Tmap.TMapView
+            android:id="@+id/map_view3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/direct_info"
+            android:layout_above="@id/totaldistance"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/right_light"
+        android:layout_width="30dp"
+        android:layout_toRightOf="@+id/naviinfo"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

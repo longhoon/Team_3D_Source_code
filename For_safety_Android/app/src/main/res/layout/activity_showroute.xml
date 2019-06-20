@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총거리 : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showtime"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예상소요시간 : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showdistance"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:textSize="15dp"
+                android:text="출발지 : "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/startname"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_weight="10"
+                android:text="도착지"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/destname"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/guide"
+            android:text="안내시작"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.skt.Tmap.TMapView
+            android:id="@+id/map_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <SlidingDrawer
+            android:id="@+id/slidingdrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="▲상세" />
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/navilist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+
+            </LinearLayout>
+        </SlidingDrawer>
+
+    </RelativeLayout>
+
+</LinearLayout>
