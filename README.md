@@ -17,7 +17,7 @@ Team_3D_Source_code
 
   For_Safety_Arduino/ : 아두이노 심박측정센서 및 소리감지센서 input/output source code
 
-  For_safety_Raspberry_pi_server : 라즈베리파이 소켓 TCPServer source code
+  For_safety_Raspberry_pi_server/ : 라즈베리파이 소켓 TCPServer source code
 
 <Roles>
   
